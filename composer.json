@@ -1,5 +1,5 @@
 {
-    "name": "oseintow/laravel-shopify",
+    "name": "alegiac/laravel-shopify",
     "description": "Laravel shopify package",
     "license": "MIT",
     "authors": [
@@ -10,8 +10,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "guzzlehttp/guzzle": "^6.2",
-        "illuminate/support": "^6.0|^7.0"
+        "guzzlehttp/guzzle": "^6.2"
     },
     "autoload": {
         "psr-4": {

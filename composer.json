@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "alegiac/laravel-shopify",
+    "description": "This is my package laravel-shopify",
     "keywords": [
-        ":vendor_name",
+        "Alessandro Giacomella",
         "laravel",
-        ":package_slug"
+        "laravel-shopify"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/alegiac/laravel-shopify",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Alessandro Giacomella",
+            "email": "alessandro.giacomella@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "alegiac\\LaravelShopify\\": "src/",
+            "alegiac\\LaravelShopify\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "alegiac\\LaravelShopify\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "alegiac\\LaravelShopify\\LaravelShopifyServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelShopify": "alegiac\\LaravelShopify\\Facades\\LaravelShopify"
             }
         }
     },

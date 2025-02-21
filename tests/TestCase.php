@@ -2,9 +2,9 @@
 
 namespace alegiac\LaravelShopify\Tests;
 
+use alegiac\LaravelShopify\LaravelShopifyServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use alegiac\LaravelShopify\LaravelShopifyServiceProvider;
 
 class TestCase extends Orchestra
 {

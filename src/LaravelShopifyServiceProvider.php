@@ -2,9 +2,9 @@
 
 namespace alegiac\LaravelShopify;
 
+use alegiac\LaravelShopify\Commands\LaravelShopifyCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use alegiac\LaravelShopify\Commands\LaravelShopifyCommand;
 
 class LaravelShopifyServiceProvider extends PackageServiceProvider
 {

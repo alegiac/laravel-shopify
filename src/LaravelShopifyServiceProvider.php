@@ -1,10 +1,8 @@
 <?php
 
-namespace Alegiac\LaravelShopify;
+namespace alegiac\LaravelShopify;
 
-use Alegiac\LaravelShopify\Services\ShopifyManager;
-use Eurostep\Edi\Edi;
-use Illuminate\Support\ServiceProvider;
+use alegiac\LaravelShopify\Commands\LaravelShopifyCommand;
 
 /**
  * Class LaravelShopifyServiceProvider

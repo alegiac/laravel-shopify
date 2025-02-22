@@ -5,6 +5,7 @@ namespace Alegiac\LaravelShopify\Services;
 class ShopifyManager
 {
     protected $config;
+
     protected $service;
 
     public function __construct(array $config)
@@ -20,4 +21,3 @@ class ShopifyManager
         return call_user_func_array([$this->service, $method], $args);
     }
 }
-

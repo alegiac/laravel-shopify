@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\Http;
 class ShopifyGraphQLService
 {
     protected $config;
+
     protected $endpoint;
 
     public function __construct(array $config)
     {
         $this->config = $config;
-        $this->endpoint = "https://" . $config['shop_url'] . "/admin/api/" . $config['api_version'] . "/graphql.json";
+        $this->endpoint = 'https://'.$config['shop_url'].'/admin/api/'.$config['api_version'].'/graphql.json';
     }
 
     public function query(string $query, array $variables = [])
@@ -25,13 +26,15 @@ class ShopifyGraphQLService
 
     public function getProducts()
     {
-        $query = "query { products(first: 10) { edges { node { id title } } } }";
+        $query = 'query { products(first: 10) { edges { node { id title } } } }';
+
         return $this->query($query);
     }
 
     public function createOrder(array $data)
     {
         $query = "mutation createOrder($input: OrderInput!) { orderCreate(input: $input) { order { id } } }";
+
         return $this->query($query, ['input' => $data]);
     }
 

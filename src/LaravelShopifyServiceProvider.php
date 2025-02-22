@@ -2,25 +2,16 @@
 
 namespace alegiac\LaravelShopify;
 
-use alegiac\LaravelShopify\Commands\LaravelShopifyCommand;
-
 /**
  * Class LaravelShopifyServiceProvider
- *
  */
 class LaravelShopifyServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap the application services.
      */
-    public function boot(): void
-    {
-    }
+    public function boot(): void {}
 
-    /**
-     * @return void
-     */
     public function register(): void
     {
         $this->publishes([

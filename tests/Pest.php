@@ -1,5 +1,5 @@
 <?php
 
-use alegiac\LaravelShopify\Tests\TestCase;
+use Alegiac\LaravelShopify\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

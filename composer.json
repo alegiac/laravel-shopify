@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "alegiac\\LaravelShopify\\": "src/",
-            "alegiac\\LaravelShopify\\Database\\Factories\\": "database/factories/"
+            "Alegiac\\LaravelShopify\\": "src/",
+            "Alegiac\\LaravelShopify\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "alegiac\\LaravelShopify\\Tests\\": "tests/",
+            "Alegiac\\LaravelShopify\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "alegiac\\LaravelShopify\\LaravelShopifyServiceProvider"
+                "Alegiac\\LaravelShopify\\LaravelShopifyServiceProvider"
             ],
             "aliases": {
-                "LaravelShopify": "alegiac\\LaravelShopify\\Facades\\LaravelShopify"
+                "LaravelShopify": "Alegiac\\LaravelShopify\\Facades\\LaravelShopify"
             }
         }
     },

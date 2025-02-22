@@ -1,6 +1,6 @@
 <?php
 
-namespace alegiac\LaravelShopify\Database\Factories;
+namespace Alegiac\LaravelShopify\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

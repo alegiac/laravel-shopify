@@ -1,25 +1,36 @@
 <?php
 
-namespace alegiac\LaravelShopify;
+namespace Alegiac\LaravelShopify;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
-use alegiac\LaravelShopify\Commands\LaravelShopifyCommand;
+use Alegiac\LaravelShopify\Services\ShopifyManager;
+use Eurostep\Edi\Edi;
+use Illuminate\Support\ServiceProvider;
 
-class LaravelShopifyServiceProvider extends PackageServiceProvider
+/**
+ * Class LaravelShopifyServiceProvider
+ *
+ */
+class LaravelShopifyServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+
+    /**
+     * Bootstrap the application services.
+     */
+    public function boot(): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('laravel-shopify')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_shopify_table')
-            ->hasCommand(LaravelShopifyCommand::class);
+    }
+
+    /**
+     * @return void
+     */
+    public function register(): void
+    {
+        $this->publishes([
+            __DIR__.'/../../config/shopify.php' => config_path('shopify.php'),
+        ], 'config');
+
+        $this->app->singleton('shopify', function () {
+            return new ShopifyManager(config('shopify'));
+        });
     }
 }

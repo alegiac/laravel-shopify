@@ -1,10 +1,10 @@
 <?php
 
-namespace alegiac\LaravelShopify\Tests;
+namespace Alegiac\LaravelShopify\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use alegiac\LaravelShopify\LaravelShopifyServiceProvider;
+use Alegiac\LaravelShopify\LaravelShopifyServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'alegiac\\LaravelShopify\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Alegiac\\LaravelShopify\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

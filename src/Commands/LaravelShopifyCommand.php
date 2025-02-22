@@ -1,6 +1,6 @@
 <?php
 
-namespace alegiac\LaravelShopify\Commands;
+namespace Alegiac\LaravelShopify\Commands;
 
 use Illuminate\Console\Command;
 

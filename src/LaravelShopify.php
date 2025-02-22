@@ -1,5 +1,5 @@
 <?php
 
-namespace alegiac\LaravelShopify;
+namespace Alegiac\LaravelShopify;
 
 class LaravelShopify {}
